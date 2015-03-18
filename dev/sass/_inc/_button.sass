@@ -1,0 +1,66 @@
+.btn
+	display: inline-block
+	border-radius: $radius
+	background-color: $color-brand-green
+	color: #fff
+	font-family: $font-semibold
+	text-transform: uppercase
+	padding: $gutter
+	border: 1px solid #82ac3d
+	box-shadow: inset 0 1px 0 #b8e968
+	cursor: pointer
+
+	&:hover, &:focus
+		text-decoration: none
+		background-color: darken($color-brand-green, 5)
+
+	&:active
+		box-shadow: inset 0 2px 3px rgba(0,0,0,.2)
+
+	&-block
+		display: block
+		text-align: center
+		width: 100%
+
+	&-facebook
+		background-color: #3b5998
+		border-color: #2b4271
+		box-shadow: inset 0 1px 0 #537acc
+		height: 51px
+
+		&:hover, &:focus
+			background-color: darken(#3b5998, 5)
+
+	&-soundcloud
+		background-color: #f60
+		border-color: #c72800
+		box-shadow: inset 0 1px 0 #ffb381
+		height: 51px
+
+		&:hover, &:focus
+			background-color: darken(#f60, 5)
+
+// button icons
+[class*="icon"]
+	display: inline-block
+	vertical-align: middle
+
+.icon_signin
+	background: url(../img/icon-social-signin.svg)
+	width: 42px
+	height: 25px
+	margin: -3px $gutter 0 0
+
+	&-fb
+		background-position: 0 0
+		position: relative
+		right: 10px
+
+	&-sc
+		background-position: -42px 0
+
+	.no-svg &
+		background-image: url(../img/icon-social-signin.png)
+
+	@media (max-width: 479px)
+		display: none

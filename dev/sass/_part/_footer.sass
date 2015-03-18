@@ -11,40 +11,82 @@
 			text-decoration: none
 			color: #ccc
 
-	// navigation
-	&_nav
-		@include clearfix
+	@media (max-width: $screen-sm-max)
+		text-align: center
 
-		&__main
-			float: left
-			width: 50%
+// navigation
+.footer_nav
+	@include clearfix
 
-			ul
-				margin: 0 0 $gutter*2
+	&__main
+		float: left
+		width: 50%
 
-			li
-				display: inline-block
-				margin-right: 30px
+		ul
+			margin: 0 0 $gutter*2
 
-		&__social
-			float: right
-			width: 50%
-			text-align: right
+		li
+			display: inline-block
+			margin-right: 30px
 
-			ul
-				list-style: none
-				padding-left: 0
-				margin: 0 0 $gutter*2
+		@media (max-width: $screen-sm-max)
+			float: none
+			width: auto
 
 			li
-				display: inline-block
-				margin-left: 30px
+				margin: 5px $gutter
 
-	// copyright
-	&_copyright
+	&__social
+		float: right
+		width: 50%
+		text-align: right
 
-		small
-			font-size: 14px
-		a
-			color: $color-brand-green
+		ul
+			list-style: none
+			padding-left: 0
+			margin: 0 0 $gutter*2
+
+		li
+			display: inline-block
+			margin-left: 30px
+
+		@media (max-width: $screen-sm-max)
+			float: none
+			width: auto
+			text-align: center
+
+			li
+				margin: 5px $gutter
+
+	&--fb a:hover
+		color: #3b5998
+
+	&--tw a:hover
+		color: #55acee
+
+	&--gp a:hover
+		color: #dd4b39
+
+	&--ig a:hover
+		color: #3f729b
+
+
+
+// copyright
+.footer_copyright
+	clear: both
+
+	small
+		font-size: 14px
+	a
+		color: $color-brand-green
+
+// selection
+::-moz-selection
+	color: #fff
+	background: $color-brand-green
+
+::selection
+	color: #fff
+	background: $color-brand-green
 

@@ -18,7 +18,7 @@
 					<a href="#">bookya</a>
 				</div>
 				<div class="top_accmgmt">
-					Do not have an account? <a href="#">Sign Up</a>
+					<span class="hidden-xs">Do not have an account?</span> <a href="#">Sign Up</a>
 				</div>
 			</div>
 
@@ -35,26 +35,31 @@
 						</header>
 						<div class="signin_block">
 							<div class="signin_social">
-								<a href="#" class="btn btn-facebook">Connect with Facebook</a>
-								<a href="#" class="btn btn-soundcloud">Connect with SoundCloud</a>
+								<a href="#" class="btn btn-block btn-facebook">
+									<i class="icon_signin icon_signin-fb"></i>
+									Connect with Facebook
+								</a>
+								<a href="#" class="btn btn-block btn-soundcloud">
+									<i class="icon_signin icon_signin-sc"></i>
+									Connect with SoundCloud
+								</a>
 							</div>
 							<span class="spacing">or</span>
 							<div class="signin_input">
 								<form action="" method="post">
-									<div class="form-group">
-										<input name="user-email" id="user-email" type="email" placeholder="Email">
-										<label for="user-email">Email</label>
+									<div class="form-group is-valid">
+										<input name="user-email" id="user-email" type="email" placeholder="Email" class="form-control" value="darusim.ws@gmail.com">
+										<label for="user-email" class="control-label">Email</label>
 									</div>
 									<div class="form-group">
-										<input name="user-password" id="user-password" type="password" placeholder="password">
-										<label for="user-password">Password</label>
+										<input name="user-password" id="user-password" type="password" placeholder="password" class="form-control">
+										<label for="user-password" class="control-label">Password</label>
 									</div>
-									<span class="spacing"></span>
 									<div class="form-group form-group__action">
-										<button type="submit" class="btn btn-green">Sign In</button>
-										<div class="form-group_rescue">
-											<a href="#">Oops, I forgot my password</a>
-										</div>
+										<button type="submit" class="btn btn-block">Sign In</button>
+									</div>
+									<div class="form-group__rescue">
+										<a href="#">Oops, I forgot my password</a>
 									</div>
 								</form>
 
@@ -83,10 +88,10 @@
 					</nav>
 					<div class="footer_nav__social">
 						<ul>
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#">Google+</a></li>
-							<li><a href="#">Instagram</a></li>
+							<li class="footer_nav--fb"><a href="#">Facebook</a></li>
+							<li class="footer_nav--tw"><a href="#">Twitter</a></li>
+							<li class="footer_nav--gp"><a href="#">Google+</a></li>
+							<li class="footer_nav--ig"><a href="#">Instagram</a></li>
 						</ul>
 					</div>
 					<div class="footer_copyright">

@@ -372,7 +372,10 @@ body {
   font: 14px/1.4 "proxima_nova_rgregular", "Helvetica Neue", sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
   a:hover {
     text-decoration: underline; }
 
@@ -391,29 +394,197 @@ h1 {
   margin: 0 auto;
   padding: 0 15px; }
 
+.btn {
+  display: inline-block;
+  border-radius: 2px;
+  background-color: #93c345;
+  color: #fff;
+  font-family: "proxima_novasemibold", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  padding: 15px;
+  border: 1px solid #82ac3d;
+  box-shadow: inset 0 1px 0 #b8e968;
+  cursor: pointer; }
+  .btn:hover, .btn:focus {
+    text-decoration: none;
+    background-color: #86b43a; }
+  .btn:active {
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2); }
+  .btn-block {
+    display: block;
+    text-align: center;
+    width: 100%; }
+  .btn-facebook {
+    background-color: #3b5998;
+    border-color: #2b4271;
+    box-shadow: inset 0 1px 0 #537acc;
+    height: 51px; }
+    .btn-facebook:hover, .btn-facebook:focus {
+      background-color: #344e86; }
+  .btn-soundcloud {
+    background-color: #f60;
+    border-color: #c72800;
+    box-shadow: inset 0 1px 0 #ffb381;
+    height: 51px; }
+    .btn-soundcloud:hover, .btn-soundcloud:focus {
+      background-color: #e65c00; }
+
+[class*="icon"] {
+  display: inline-block;
+  vertical-align: middle; }
+
+.icon_signin {
+  background: url(../img/icon-social-signin.svg);
+  width: 42px;
+  height: 25px;
+  margin: -3px 15px 0 0; }
+  .icon_signin-fb {
+    background-position: 0 0;
+    position: relative;
+    right: 10px; }
+  .icon_signin-sc {
+    background-position: -42px 0; }
+  .no-svg .icon_signin {
+    background-image: url(../img/icon-social-signin.png); }
+  @media (max-width: 479px) {
+    .icon_signin {
+      display: none; } }
+
+.form-group {
+  margin-bottom: 10px; }
+  .form-group.is-valid {
+    position: relative; }
+    .form-group.is-valid:after {
+      position: absolute;
+      width: 16px;
+      height: 10px;
+      background: url(../img/icon-tick-green.svg) no-repeat;
+      content: "";
+      display: block;
+      top: 50%;
+      margin-top: -5px;
+      right: 15px; }
+      .no-svg .form-group.is-valid:after {
+        background-image: url(../img/icon-tick-green.png); }
+
+.form-control {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  background-color: #f7f7f7;
+  border-radius: 2px;
+  outline: 0;
+  width: 100%;
+  line-height: 1.4; }
+  .form-control:focus, .form-control:active {
+    border-color: #c7c7c7; }
+  .is-valid .form-control {
+    border-color: #93c345;
+    position: relative; }
+
 .top {
   background: #fff;
   border-top: 5px solid #93c345;
-  border-bottom: 1px solid #e0e0e0; }
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0; }
+  .top::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.top_logo {
+  float: left; }
+  .top_logo a {
+    height: 1em;
+    line-height: 1.5;
+    overflow: hidden;
+    width: 110px;
+    height: 30px;
+    background: url(../img/bookya-logo.png) no-repeat;
+    -webkit-background-size: 110px 30px;
+    background-size: 110px 30px;
+    display: block; }
+    .top_logo a::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 100%; }
+
+.top_accmgmt {
+  float: right;
+  color: rgba(90, 90, 90, 0.5);
+  line-height: 30px; }
+  .top_accmgmt a {
+    color: rgba(90, 90, 90, 0.5);
+    font-family: "proxima_novasemibold", "Helvetica Neue", sans-serif;
+    background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #ccc 85%, #fff 90%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 80%, #ccc 85%, #fff 90%); }
+    .top_accmgmt a:hover {
+      text-decoration: none;
+      background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #999 85%, #fff 90%);
+      background: linear-gradient(to bottom, #fff 0%, #fff 80%, #999 85%, #fff 90%); }
 
 .main_signin {
-  min-height: 500px;
-  height: 80vh; }
+  min-height: 80vh; }
 
 .signin {
-  padding-top: 60px;
+  padding: 60px 0;
   max-width: 600px;
   margin: 0 auto; }
 
 .signin_header {
   text-align: center;
   font-family: "proxima_novalight", "Helvetica Neue", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #77787b; }
+  .signin_header h1 {
+    color: #666; }
 
 .signin_block {
   background-color: #fff;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #e0e0e0;
+  padding: 60px 16.6666666667%;
+  position: relative; }
+  @media (max-width: 767px) {
+    .signin_block {
+      padding-left: 8.3333333333%;
+      padding-right: 8.3333333333%; } }
+
+.signin_social .btn-facebook {
+  margin-bottom: 10px; }
+
+.signin_input .control-label {
+  display: none; }
+.signin_input .form-group__action {
+  margin-top: 30px; }
+
+.signin_backtohome {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: "proxima_nova_rgbold", "Helvetica Neue", sans-serif; }
+  .signin_backtohome a {
+    color: #666;
+    opacity: 0.5; }
+
+.spacing {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  color: #666;
+  font-family: "proxima_novalight", "Helvetica Neue", sans-serif;
+  opacity: 0.5; }
+
+.form-group__rescue {
+  text-align: center; }
+  .form-group__rescue a {
+    color: #666;
+    background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #ccc 85%, #fff 90%);
+    background: linear-gradient(to bottom, #fff 0%, #fff 80%, #ccc 85%, #fff 90%); }
+    .form-group__rescue a:hover {
+      text-decoration: none;
+      background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #999 85%, #fff 90%);
+      background: linear-gradient(to bottom, #fff 0%, #fff 80%, #999 85%, #fff 90%); }
 
 .footer {
   background: #2a2b2d;
@@ -425,30 +596,70 @@ h1 {
     .footer a:hover {
       text-decoration: none;
       color: #ccc; }
-  .footer_nav::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .footer_nav__main {
-    float: left;
-    width: 50%; }
-    .footer_nav__main ul {
-      margin: 0 0 30px; }
-    .footer_nav__main li {
-      display: inline-block;
-      margin-right: 30px; }
-  .footer_nav__social {
-    float: right;
-    width: 50%;
-    text-align: right; }
-    .footer_nav__social ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0 0 30px; }
-    .footer_nav__social li {
-      display: inline-block;
-      margin-left: 30px; }
+  @media (max-width: 991px) {
+    .footer {
+      text-align: center; } }
+
+.footer_nav::after {
+  clear: both;
+  content: "";
+  display: table; }
+.footer_nav__main {
+  float: left;
+  width: 50%; }
+  .footer_nav__main ul {
+    margin: 0 0 30px; }
+  .footer_nav__main li {
+    display: inline-block;
+    margin-right: 30px; }
+  @media (max-width: 991px) {
+    .footer_nav__main {
+      float: none;
+      width: auto; }
+      .footer_nav__main li {
+        margin: 5px 15px; } }
+.footer_nav__social {
+  float: right;
+  width: 50%;
+  text-align: right; }
+  .footer_nav__social ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 30px; }
+  .footer_nav__social li {
+    display: inline-block;
+    margin-left: 30px; }
+  @media (max-width: 991px) {
+    .footer_nav__social {
+      float: none;
+      width: auto;
+      text-align: center; }
+      .footer_nav__social li {
+        margin: 5px 15px; } }
+.footer_nav--fb a:hover {
+  color: #3b5998; }
+.footer_nav--tw a:hover {
+  color: #55acee; }
+.footer_nav--gp a:hover {
+  color: #dd4b39; }
+.footer_nav--ig a:hover {
+  color: #3f729b; }
+
+.footer_copyright {
+  clear: both; }
   .footer_copyright small {
     font-size: 14px; }
   .footer_copyright a {
     color: #93c345; }
+
+::-moz-selection {
+  color: #fff;
+  background: #93c345; }
+
+::selection {
+  color: #fff;
+  background: #93c345; }
+
+@media (max-width: 480px) {
+  .hidden-xs {
+    display: none; } }

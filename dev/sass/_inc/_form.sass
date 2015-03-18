@@ -1,0 +1,38 @@
+.form-group
+	margin-bottom: 10px
+
+	&.is-valid
+		position: relative
+
+		&:after
+			position: absolute
+			width: 16px
+			height: 10px
+			background: url(../img/icon-tick-green.svg) no-repeat
+			content: ''
+			display: block
+			top: 50%
+			margin-top: -5px
+			right: $gutter
+
+			.no-svg &
+				background-image: url(../img/icon-tick-green.png)
+
+
+.form-control
+	padding: $gutter
+	border: 1px solid #e0e0e0
+	background-color: #f7f7f7
+	border-radius: $radius
+	outline: 0
+	width: 100%
+	line-height: 1.4
+
+	&:focus, &:active
+		border-color: darken(#e0e0e0,10)
+
+	.is-valid &
+		border-color: $color-brand-green
+		position: relative
+
+

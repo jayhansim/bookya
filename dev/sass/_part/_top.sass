@@ -2,3 +2,35 @@
 	background: #fff
 	border-top: 5px solid $color-brand-green
 	border-bottom: 1px solid $color-border
+	@include clearfix
+	padding: 10px 0
+
+// logo
+.top_logo
+	float: left
+
+	a
+		@include hide-text
+		width: 110px
+		height: 30px
+		background: url(../img/bookya-logo.png) no-repeat
+		-webkit-background-size: 110px 30px
+		background-size: 110px 30px
+		display: block
+
+
+
+.top_accmgmt
+	float: right
+	color: rgba(#5a5a5a, .5)
+	line-height: 30px //follow logo height
+
+	a
+		color: rgba(#5a5a5a, .5)
+		font-family: $font-semibold
+		@include background(linear-gradient(to bottom, #fff 0%, #fff 80%, #ccc 85%, #fff 90%))
+
+		&:hover
+			text-decoration: none
+			@include background(linear-gradient(to bottom, #fff 0%, #fff 80%, #999 85%, #fff 90%))
+

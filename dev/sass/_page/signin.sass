@@ -9,17 +9,17 @@
 @import "../_inc/_global"
 @import "../_inc/_grid"
 @import "../_inc/_button"
+@import "../_inc/_form"
 
 
 @import "../_part/_top"
 
 .main
 	&_signin
-		min-height: 500px
-		height: 80vh
+		min-height: 80vh
 
 .signin
-	padding-top: 60px
+	padding: 60px 0
 	max-width: 600px
 	margin: 0 auto
 
@@ -27,13 +27,60 @@
 	text-align: center
 	font-family: $font-light
 	font-size: 18px
+	color: #77787b
+
+	h1
+		color: $color
 
 .signin_block
 	@include block
+	padding: 60px percentage(1/6)
+	position: relative
 
+	@media (max-width: $screen-xs-max)
+		padding-left: percentage(1/12)
+		padding-right: percentage(1/12)
 
+.signin_social
+	.btn-facebook
+		margin-bottom: 10px
 
+.signin_input
+	.control-label
+		display: none
 
+	.form-group__action
+		margin-top: 30px
+
+.signin_backtohome
+	position: absolute
+	bottom: 10px
+	right: 10px
+	font-family: $font-bold
+
+	a
+		color: #666
+		opacity: .5
+
+.spacing
+	display: block
+	text-align: center
+	padding: 5px 0
+	color: #666
+	font-family: $font-light
+	opacity: .5
+
+.form-group__rescue
+	text-align: center
+
+	a
+		color: #666
+		@include background(linear-gradient(to bottom, #fff 0%, #fff 80%, #ccc 85%, #fff 90%))
+
+		&:hover
+			text-decoration: none
+			@include background(linear-gradient(to bottom, #fff 0%, #fff 80%, #999 85%, #fff 90%))
 
 
 @import "../_part/_footer"
+@import "../_inc/_responsive-utils"

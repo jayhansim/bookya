@@ -134,6 +134,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/build\/img\/bookya-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4526,
+		"inputAbbreviatedPath": "\/build\/img\/bookya-logo.png",
+		"outputAbbreviatedPath": "\/build\/img\/bookya-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/icon-social-signin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1091,
+		"inputAbbreviatedPath": "\/build\/img\/icon-social-signin.png",
+		"outputAbbreviatedPath": "\/build\/img\/icon-social-signin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/build\/img\/icon-tick-green.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 404,
+		"inputAbbreviatedPath": "\/build\/img\/icon-tick-green.png",
+		"outputAbbreviatedPath": "\/build\/img\/icon-tick-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/build\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -206,6 +239,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/dev\/sass\/_inc\/_form.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/sass\/_inc\/_form.sass",
+		"outputAbbreviatedPath": "\/dev\/sass\/css\/_form.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
 	"\/dev\/sass\/_inc\/_global.sass": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -263,6 +312,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/dev\/sass\/_inc\/_normalize.sass",
 		"outputAbbreviatedPath": "\/dev\/sass\/css\/_normalize.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": false
+		},
+	"\/dev\/sass\/_inc\/_responsive-utils.sass": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 2,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dev\/sass\/_inc\/_responsive-utils.sass",
+		"outputAbbreviatedPath": "\/dev\/sass\/css\/_responsive-utils.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
