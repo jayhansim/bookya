@@ -1,0 +1,39 @@
+// Bourbon
+@import "bourbon"
+
+// GLOBAL
+@import "../_inc/_var"
+@import "../_inc/_mixin"
+@import "../_inc/_normalize"
+@import "../_inc/_fontface"
+@import "../_inc/_global"
+@import "../_inc/_grid"
+@import "../_inc/_button"
+
+
+@import "../_part/_top"
+
+.main
+	&_signin
+		min-height: 500px
+		height: 80vh
+
+.signin
+	padding-top: 60px
+	max-width: 600px
+	margin: 0 auto
+
+.signin_header
+	text-align: center
+	font-family: $font-light
+	font-size: 18px
+
+.signin_block
+	@include block
+
+
+
+
+
+
+@import "../_part/_footer"

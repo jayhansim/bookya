@@ -1,0 +1,50 @@
+.footer
+	background: $color-footer-bg
+	color: $color-footer-text
+	font-family: $font-light
+	padding: $gutter*2 0
+
+	a
+		color: #f4f4f4
+
+		&:hover
+			text-decoration: none
+			color: #ccc
+
+	// navigation
+	&_nav
+		@include clearfix
+
+		&__main
+			float: left
+			width: 50%
+
+			ul
+				margin: 0 0 $gutter*2
+
+			li
+				display: inline-block
+				margin-right: 30px
+
+		&__social
+			float: right
+			width: 50%
+			text-align: right
+
+			ul
+				list-style: none
+				padding-left: 0
+				margin: 0 0 $gutter*2
+
+			li
+				display: inline-block
+				margin-left: 30px
+
+	// copyright
+	&_copyright
+
+		small
+			font-size: 14px
+		a
+			color: $color-brand-green
+

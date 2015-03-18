@@ -1,0 +1,24 @@
+*, *:before, *:after
+	@include box-sizing(border-box)
+
+body
+	background-color: $color-bodybg
+	color: $color
+	font: 14px/1.4 $font
+
+a
+	text-decoration: none
+
+	&:hover
+		text-decoration: underline
+
+nav
+	ul
+		list-style: none
+		padding-left: 0
+
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, table
+	margin: 0 0 $gutter
+
+h1
+	font: 26px/1.1 $font-light
