@@ -606,12 +606,14 @@ h1 {
   display: table; }
 .footer_nav__main {
   float: left;
-  width: 50%; }
+  width: 60%; }
   .footer_nav__main ul {
     margin: 0 0 30px; }
   .footer_nav__main li {
     display: inline-block;
     margin-right: 30px; }
+    .footer_nav__main li:last-child {
+      margin-right: 0; }
   @media (max-width: 991px) {
     .footer_nav__main {
       float: none;
@@ -620,7 +622,7 @@ h1 {
         margin: 5px 15px; } }
 .footer_nav__social {
   float: right;
-  width: 50%;
+  width: 40%;
   text-align: right; }
   .footer_nav__social ul {
     list-style: none;
@@ -629,6 +631,8 @@ h1 {
   .footer_nav__social li {
     display: inline-block;
     margin-left: 30px; }
+    .footer_nav__social li:first-child {
+      margin-left: 0; }
   @media (max-width: 991px) {
     .footer_nav__social {
       float: none;

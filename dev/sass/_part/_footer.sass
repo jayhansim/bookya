@@ -20,7 +20,7 @@
 
 	&__main
 		float: left
-		width: 50%
+		width: 60%
 
 		ul
 			margin: 0 0 $gutter*2
@@ -28,6 +28,9 @@
 		li
 			display: inline-block
 			margin-right: 30px
+
+			&:last-child
+				margin-right: 0
 
 		@media (max-width: $screen-sm-max)
 			float: none
@@ -38,7 +41,7 @@
 
 	&__social
 		float: right
-		width: 50%
+		width: 40%
 		text-align: right
 
 		ul
@@ -49,6 +52,9 @@
 		li
 			display: inline-block
 			margin-left: 30px
+
+			&:first-child
+				margin-left: 0
 
 		@media (max-width: $screen-sm-max)
 			float: none
