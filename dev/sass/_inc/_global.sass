@@ -10,8 +10,9 @@ a
 	text-decoration: none
 	@include transition(all .1s linear)
 
-	&:hover
-		text-decoration: underline
+	&:not(.btn)
+		&:hover
+			@include link-hover
 
 nav
 	ul

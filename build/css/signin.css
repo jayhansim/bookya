@@ -376,8 +376,9 @@ a {
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
   transition: all 0.1s linear; }
-  a:hover {
-    text-decoration: underline; }
+  a:not(.btn):hover {
+    background: -webkit-linear-gradient( top , transparent 0%, transparent 80%, #999 85%, transparent 90%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 80%, #999 85%, transparent 90%); }
 
 nav ul {
   list-style: none;
@@ -428,6 +429,11 @@ h1 {
     height: 51px; }
     .btn-soundcloud:hover, .btn-soundcloud:focus {
       background-color: #e65c00; }
+
+button {
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear; }
 
 [class*="icon"] {
   display: inline-block;
@@ -519,9 +525,8 @@ h1 {
     background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #ccc 85%, #fff 90%);
     background: linear-gradient(to bottom, #fff 0%, #fff 80%, #ccc 85%, #fff 90%); }
     .top_accmgmt a:hover {
-      text-decoration: none;
-      background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #999 85%, #fff 90%);
-      background: linear-gradient(to bottom, #fff 0%, #fff 80%, #999 85%, #fff 90%); }
+      background: -webkit-linear-gradient( top , transparent 0%, transparent 80%, #999 85%, transparent 90%);
+      background: linear-gradient(to bottom, transparent 0%, transparent 80%, #999 85%, transparent 90%); }
 
 .main_signin {
   min-height: 80vh; }
@@ -579,12 +584,11 @@ h1 {
   text-align: center; }
   .form-group__rescue a {
     color: #666;
-    background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #ccc 85%, #fff 90%);
-    background: linear-gradient(to bottom, #fff 0%, #fff 80%, #ccc 85%, #fff 90%); }
+    background: -webkit-linear-gradient( top , transparent 0%, transparent 80%, #ccc 85%, transparent 90%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 80%, #ccc 85%, transparent 90%); }
     .form-group__rescue a:hover {
-      text-decoration: none;
-      background: -webkit-linear-gradient( top , #fff 0%, #fff 80%, #999 85%, #fff 90%);
-      background: linear-gradient(to bottom, #fff 0%, #fff 80%, #999 85%, #fff 90%); }
+      background: -webkit-linear-gradient( top , transparent 0%, transparent 80%, #999 85%, transparent 90%);
+      background: linear-gradient(to bottom, transparent 0%, transparent 80%, #999 85%, transparent 90%); }
 
 .footer {
   background: #2a2b2d;
@@ -594,7 +598,7 @@ h1 {
   .footer a {
     color: #f4f4f4; }
     .footer a:hover {
-      text-decoration: none;
+      background: transparent;
       color: #ccc; }
   @media (max-width: 991px) {
     .footer {
@@ -641,13 +645,13 @@ h1 {
       .footer_nav__social li {
         margin: 5px 15px; } }
 .footer_nav--fb a:hover {
-  color: #3b5998; }
+  color: #718dc8; }
 .footer_nav--tw a:hover {
   color: #55acee; }
 .footer_nav--gp a:hover {
   color: #dd4b39; }
 .footer_nav--ig a:hover {
-  color: #3f729b; }
+  color: #78a4c8; }
 
 .footer_copyright {
   clear: both; }
